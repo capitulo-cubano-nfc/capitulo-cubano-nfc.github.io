@@ -1,7 +1,7 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 #
-# Capitulo cubano neurofisiologia documentation build configuration file, created by
-# sphinx-quickstart on Sat Mar  5 00:28:17 2016.
+# Valia's course documentation build configuration file, created by
+# sphinx-quickstart on Fri Mar  4 15:06:05 2016.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -28,7 +28,9 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = [
+    'sphinx.ext.mathjax',
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -45,7 +47,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Capitulo cubano neurofisiologia'
+project = u'CC-NFC'
 copyright = u'2016, Valia Rodriguez Rodriguez'
 author = u'Valia Rodriguez Rodriguez'
 
@@ -63,7 +65,7 @@ release = u'1.0'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'es'
+language = "es"
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -107,21 +109,19 @@ todo_include_todos = False
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'alabaster'
+html_theme = 'bizstyle'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = {
-    "nosidebar": "true",
-}
+#html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = u'Capítulo Cubano de Neurofisiología Clínica'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -154,7 +154,7 @@ html_static_path = ['_static']
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-#html_sidebars = {}
+html_sidebars = {'**': ['cc-nfc_sidebar.html']}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
@@ -201,7 +201,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Capitulocubanoneurofisiologiadoc'
+htmlhelp_basename = 'Valiascapitulodoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -223,7 +223,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Capitulocubanoneurofisiologia.tex', u'Capitulo cubano neurofisiologia Documentation',
+    (master_doc, 'Valiascourse.tex', u'Valia\'s cc-nfc Documentation',
      u'Valia Rodriguez Rodriguez', 'manual'),
 ]
 
@@ -253,7 +253,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'capitulocubanoneurofisiologia', u'Capitulo cubano neurofisiologia Documentation',
+    (master_doc, 'valiascourse', u'Valia\'s cc-nfc Documentation',
      [author], 1)
 ]
 
@@ -267,8 +267,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Capitulocubanoneurofisiologia', u'Capitulo cubano neurofisiologia Documentation',
-     author, 'Capitulocubanoneurofisiologia', 'One line description of project.',
+    (master_doc, 'Valiascourse', u'Valia\'s cc-nfc Documentation',
+     author, 'Valiascourse', 'One line description of project.',
      'Miscellaneous'),
 ]
 

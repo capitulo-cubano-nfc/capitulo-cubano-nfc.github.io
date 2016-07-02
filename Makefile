@@ -94,9 +94,9 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/Capitulocubanoneurofisiologia.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/Valiascourse.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/Capitulocubanoneurofisiologia.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/Valiascourse.qhc"
 
 .PHONY: applehelp
 applehelp:
@@ -113,8 +113,8 @@ devhelp:
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/Capitulocubanoneurofisiologia"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/Capitulocubanoneurofisiologia"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/Valiascourse"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/Valiascourse"
 	@echo "# devhelp"
 
 .PHONY: epub
@@ -215,10 +215,9 @@ pseudoxml:
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
 
-.PHONY: github
 github:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
-	ghp-import -n -b master $(BUILDDIR)/html/
-	git push origin master:master --force
+	ghp-import -n $(BUILDDIR)/html/
+	git push origin gh-pages:gh-pages --force
 	@echo
 	@echo "Published to Github"
