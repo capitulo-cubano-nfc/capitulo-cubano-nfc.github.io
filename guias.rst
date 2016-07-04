@@ -6,6 +6,6 @@ Guías para el Trabajo
 
 `<http://www.clinph-journal.com/content/guidelinesIFCN>`_
 
-**Guías y Concensos de la Sociedad Norteamericana de Neurofisiología Clínica**
+**Guías y Consensos de la Sociedad Norteamericana de Neurofisiología Clínica**
 
 `<http://www.acns.org/practice/guidelines>`_
